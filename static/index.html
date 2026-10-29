@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AICTE PreCheck – AI Application Validator</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--tx:#14182b;--mu:#667;--pr:#3b4fd8;--ok:#13a05a;--er:#d6293e;--wn:#d98a00;--bd:#e3e6f0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1220;--card:#181c30;--tx:#eef0fa;--mu:#9aa0bf;--pr:#7d8bff;--bd:#2a2f4a}}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+nav{display:flex;gap:6px;align-items:center;padding:12px 20px;background:var(--card);border-bottom:1px solid var(--bd);flex-wrap:wrap;position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+nav b{margin-right:auto;font-size:17px}nav a{padding:6px 12px;border-radius:8px;color:var(--tx);text-decoration:none}nav a.on{background:var(--pr);color:#fff}
+main{max-width:980px;margin:0 auto;padding:24px 16px 60px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:18px;margin-bottom:14px}
+.hero{text-align:center;padding:48px 10px}.hero h1{font-size:clamp(28px,5vw,44px);margin:0 0 10px;line-height:1.15}.hero p{color:var(--mu);max-width:640px;margin:0 auto 22px}
+.btn{display:inline-block;background:var(--pr);color:#fff;border:0;padding:10px 18px;border-radius:10px;font-size:15px;cursor:pointer;text-decoration:none}
+.btn.g{background:transparent;color:var(--pr);border:1px solid var(--pr)}.btn.ok{background:var(--ok)}.btn.er{background:var(--er)}.btn:disabled{opacity:.4;cursor:not-allowed}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.f label{display:block;font-size:13px;color:var(--mu);margin:8px 0 3px}
+input,select,textarea{width:100%;padding:9px 10px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx);font:inherit}
+textarea{min-height:70px;font-size:12px}
+.tag{display:inline-block;padding:2px 9px;border-radius:99px;font-size:12px;color:#fff}.t-error{background:var(--er)}.t-warn{background:var(--wn)}.t-ok{background:var(--ok)}
+.iss{border-left:4px solid var(--er)}.iss.warn{border-left-color:var(--wn)}.mu{color:var(--mu);font-size:13px}
+.bar{height:8px;background:var(--bd);border-radius:9px;overflow:hidden;margin:6px 0 14px}.bar i{display:block;height:100%;background:var(--pr)}
+.tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.scroll{overflow-x:auto}
+:root[data-theme="dark"]{--bg:#090d1b;--card:#111731;--tx:#efe9d9;--mu:#98a1c4;--pr:#5b6cff;--bd:#222a4b}
+:root[data-theme="light"]{--bg:#f6f7fb;--card:#fff;--tx:#14182b;--mu:#667;--pr:#3b4fd8;--bd:#e3e6f0}
+.hero2{padding:30px 4px 6px}.eyebrow{font:12px ui-monospace,Menlo,monospace;letter-spacing:.14em;color:var(--mu);text-transform:uppercase;margin-bottom:14px}
+.hero2 h1{font-size:clamp(34px,7vw,64px);line-height:1.05;margin:0 0 16px;letter-spacing:-.02em}.hero2 h1 span{color:#aebcff}
+.hero2 p{color:var(--mu);max-width:620px;font-size:17px;margin:0 0 20px}
+.flowwrap{overflow-x:auto;border:1px solid var(--bd);border-radius:16px;background:linear-gradient(180deg,var(--card),transparent);margin-top:24px}
+.flow{position:relative;height:280px;min-width:720px}.track{position:absolute;left:10%;right:10%;top:62%;height:2px;background:var(--bd)}
+.nd{position:absolute;top:62%;transform:translate(-50%,-50%);background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:10px 16px;text-align:center;font-size:13px;color:var(--mu);z-index:2}.nd b{display:block;color:var(--tx);font-size:16px}
+.gt{position:absolute;top:62%;width:26px;height:150px;transform:translate(-50%,-50%);border-radius:14px;background:linear-gradient(#cfd8ff,#7c8bd6);box-shadow:0 0 26px #7c8bd655;z-index:1}.gt:after{content:"";position:absolute;left:50%;top:50%;width:8px;height:34px;margin:-17px 0 0 -4px;border-radius:5px;background:#090d1b}
+.gl{position:absolute;top:12%;transform:translateX(-50%);font-size:13px;color:var(--mu);white-space:nowrap;text-align:center}.gl em{display:block;font:12px ui-monospace,Menlo,monospace;letter-spacing:.22em;color:#aebcff;font-style:normal;margin-bottom:4px}
+.pk{position:absolute;top:62%;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;opacity:0;z-index:3;animation:go 7s linear infinite}.pk.b{animation-delay:3.5s}.pk.bad{animation:back 7s linear 1.2s infinite}
+@keyframes go{0%{left:10%;background:#ff9f43;opacity:0}4%{opacity:1}28%{left:29%;background:#ff9f43}38%{left:33%;background:#6b9bff}64%{left:68%;background:#6b9bff}72%{left:71%;background:#2ee59d}95%{left:90%;background:#2ee59d;opacity:1}100%{left:90%;opacity:0}}
+@keyframes back{0%{left:10%;opacity:0;background:#ff9f43}6%{opacity:1}34%{left:29%;background:#ff9f43}42%{left:29%;background:#ff4d63}80%{left:10%;background:#ff4d63;opacity:1}92%,100%{left:10%;opacity:0}}
+.verdict{font-weight:700;padding:8px 10px;border-radius:8px;margin:6px 0;background:var(--bg)}.vo{background:#13a05a26;color:#3ddc97}.vx{background:#d6293e26;color:#ff6b7d}
+.layout{display:grid;grid-template-columns:230px 1fr;gap:18px;align-items:start}
+@media(max-width:760px){.layout{grid-template-columns:1fr}.side{position:static!important;display:flex;overflow-x:auto}}
+.side{position:sticky;top:calc(70px + env(safe-area-inset-top,0px));background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:10px}
+.side a{display:flex;justify-content:space-between;gap:10px;padding:9px 10px;border-radius:9px;color:var(--tx);text-decoration:none;font-size:14px;white-space:nowrap}.side a:hover{background:var(--bg)}.side .pc{color:var(--mu);font-size:12px}
+.sec{scroll-margin-top:90px}.sec h3{margin:0 0 2px;font-size:17px}.sec .sub{color:var(--mu);font-size:13px;margin-bottom:10px}
+.hint{font-size:12px;color:var(--mu);min-height:17px;margin-top:3px}.hint.er{color:#ff6b7d}.hint.ok{color:#3ddc97}
+input.bad,select.bad{border-color:var(--er)}input.good,select.good{border-color:var(--ok)}
+.actbar{position:sticky;bottom:calc(8px + env(safe-area-inset-bottom,0px));background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:12px 16px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;box-shadow:0 8px 30px #0006;margin-top:14px}
+.banner{border-radius:14px;padding:16px 18px;margin-bottom:14px;font-size:16px}.banner.bx{background:#d6293e22;border:1px solid var(--er);color:#ff8a98}.banner.bo{background:#13a05a22;border:1px solid var(--ok);color:#3ddc97}.banner.bn{background:var(--card);border:1px solid var(--bd)}
+table.dt{width:100%;border-collapse:collapse;font-size:14px}.dt th,.dt td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--bd)}
+</style></head><body>
+<nav><b>🏛️ AICTE PreCheck</b><a href="#home" data-r="home">Home</a><a href="#apply" data-r="apply">Apply</a><a href="#review" data-r="review">AI Review</a><a href="#officer" data-r="officer">Officer</a></nav>
+<main id="app"></main>
+<script>
+const MIN_LAND=4000, MAX_RATIO=20; // configurable placeholders – set from the Approval Process Handbook
+const FIELDS=[
+["name","Institute / Society name","text"],["pan","PAN of Society/Trust","text"],["regno","Society registration no.","text"],["regdate","Registration date","date"],
+["pin","PIN code","text"],["email","Official email","email"],["phone","Contact mobile","tel"],["land","Land area (sq m)","number"],["built","Built-up area (sq m)","number"],
+["intake","Total approved intake","number"],["faculty","Faculty count","number"],["nocValid","University NOC valid till","date"],["fireValid","Fire safety cert valid till","date"],["ter","TER fee status","select"]];
+const DOCS=[["society","Society Registration Certificate",["society","trust","registration"]],["pan","PAN Card",["pan"]],["land","Land Document",["land","deed","khata"]],["noc","University NOC / Affiliation",["noc","affiliation"]],["fire","Fire Safety Certificate",["fire"]]];
+const ld=k=>{try{return JSON.parse(localStorage.getItem(k))}catch(e){return null}};
+const sv=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+let S=ld('draft')||{f:{},d:{}};
+const today=()=>new Date().toISOString().slice(0,10);
+const plus=n=>new Date(Date.now()+n*864e5).toISOString().slice(0,10);
+function lev(a,b){a=a.toLowerCase();b=b.toLowerCase();const m=[];for(let i=0;i<=a.length;i++){m[i]=[i];}for(let j=1;j<=b.length;j++)m[0][j]=j;
+ for(let i=1;i<=a.length;i++)for(let j=1;j<=b.length;j++)m[i][j]=Math.min(m[i-1][j]+1,m[i][j-1]+1,m[i-1][j-1]+(a[i-1]==b[j-1]?0:1));
+ return 1-m[a.length][b.length]/Math.max(a.length,b.length,1)}
+// --- stand-in for OCR: in production the backend returns real OCR text; here we synthesise it from the form ---
+function gen(t,f){const T={society:`CERTIFICATE OF REGISTRATION\nSociety: ${f.name}\nPAN: ${f.pan}\nReg No: ${f.regno}\nDate: ${f.regdate}`,
+ pan:`INCOME TAX DEPARTMENT\nName: ${f.name}\nPAN: ${f.pan}`,land:`LAND DOCUMENT\nOwner: ${f.name}\nArea: ${f.land} sq m`,
+ noc:`NO OBJECTION CERTIFICATE\nInstitute: ${f.name}\nValid till: ${f.nocValid}`,fire:`FIRE SAFETY CERTIFICATE\nPremises: ${f.name}\nValid till: ${f.fireValid}`};return T[t]||''}
+const classify=n=>{n=n.toLowerCase();for(const[k,,kw]of DOCS)if(kw.some(w=>n.includes(w)))return k;return null};
+const rx=(t,r)=>{const m=(t||'').match(r);return m?m[1].trim():null};
+// --- the rule engine: every mistake category lives here ---
+function validate(s){const f=s.f,I=[],A=(sev,field,msg,why)=>I.push({sev:'error',field,msg,why});
+ FIELDS.forEach(([k,l])=>{if(!String(f[k]??'').trim())A('error',k,`${l} is empty`,'Completeness check')});
+ if(f.name&&(/\d/.test(f.name)||/\s{2,}/.test(f.name)||f.name!==f.name.trim()))A('error','name','Name has digits or stray spaces','Typo / format check');
+ if(f.pan&&!/^[A-Z]{5}[0-9]{4}[A-Z]$/.test(f.pan))A('error','pan','PAN format invalid (expected ABCDE1234F)','Format validation');
+ if(f.email&&!/^[^@\s]+@[^@\s]+\.[a-z]{2,}$/i.test(f.email))A('error','email','Email address invalid','Format validation');
+ if(f.phone&&!/^[6-9]\d{9}$/.test(f.phone))A('error','phone','Mobile must be 10 digits starting 6-9','Format validation');
+ if(f.pin&&!/^[1-9]\d{5}$/.test(f.pin))A('error','pin','PIN must be 6 digits','Format validation');
+ if(f.regdate&&f.regdate>today())A('error','regdate','Registration date is in the future','Date logic');
+ if(f.land&&+f.land<MIN_LAND)A('warn','land',`Land ${f.land} sq m is below configured minimum ${MIN_LAND}`,'Regulatory rule (configurable)');
+ if(+f.built>+f.land&&f.land)A('error','built','Built-up area exceeds land area','Cross-field logic');
+ if(f.intake&&f.faculty&&+f.intake/+f.faculty>MAX_RATIO)A('error','faculty',`Student:faculty ratio ${(f.intake/f.faculty).toFixed(1)}:1 exceeds ${MAX_RATIO}:1`,'Regulatory rule (configurable)');
+ [['nocValid','NOC'],['fireValid','Fire certificate']].forEach(([k,l])=>{if(f[k]){if(f[k]<today())A('error',k,`${l} has expired`,'Expiry check')}});
+ if(f.ter&&f.ter!=='Paid')A('error','ter','TER fee not marked as paid','Institutional record check');
+ DOCS.forEach(([k,l])=>{const d=s.d[k];if(!d){A('error','doc:'+k,`${l} not uploaded`,'Completeness check');return}
+  if(d.busy)return;if(d.err){A('error','doc:'+k,`${l}: could not be read (${d.err})`,'Document reading');return}if(!d.type){A('error','doc:'+k,`${l}: file "${d.name}" could not be classified`,'Document classification');return}
+  if(d.type!==k){A('error','doc:'+k,`Wrong document: this slot needs ${l} but "${d.name}" looks like ${DOCS.find(x=>x[0]===d.type)[1]}`,'Document classification');return}
+  if(d.readable===false)A('error','doc:'+k,`${l}: image is too blurry or unreadable to verify. Upload a clearer scan`,'OCR quality');else if(d.conf<.6)A('warn','doc:'+k,`${l}: low reading confidence (${Math.round(d.conf*100)}%)`,'OCR quality');(d.flags||[]).forEach(x=>A('warn','doc:'+k,`${l}: possible alteration. ${x}`,'Tamper indicator (needs human check)'));const t=d.text,nm=rx(t,/(?:Society|Institute|Premises|Owner|Name):\s*(.+)/),pn=rx(t,/PAN:\s*(\S+)/),vd=rx(t,/Valid till:\s*(\d{4}-\d{2}-\d{2})/),ar=rx(t,/Area:\s*([\d.]+)/);
+  if(nm&&f.name){const r=lev(nm,f.name);if(r<.9)A('error','doc:'+k,`Name on ${l} ("${nm}") does not match form ("${f.name}")`,'Cross-document match');else if(r<1)A('warn','doc:'+k,`Small spelling difference on ${l}: "${nm}" vs "${f.name}"`,'Fuzzy match')}
+  if(pn&&f.pan&&pn!==f.pan)A('error','doc:'+k,`PAN on ${l} (${pn}) differs from form (${f.pan})`,'Identifier match');
+  if(vd&&vd<today())A('error','doc:'+k,`${l} expired on ${vd}`,'Expiry check');
+  if(vd&&f[k+'Valid']&&vd!==f[k+'Valid'])A('error','doc:'+k,`Validity on ${l} (${vd}) differs from form (${f[k+'Valid']})`,'Cross-document match');
+  if(ar&&f.land&&+ar!==+f.land)A('error','doc:'+k,`Area on ${l} (${ar}) differs from form (${f.land})`,'Cross-document match')});
+ return I}
+const R=()=>location.hash.slice(1)||'home';
+function pct(){const n=FIELDS.filter(([k])=>String(S.f[k]??'').trim()).length+DOCS.filter(([k])=>S.d[k]).length;return Math.round(100*n/(FIELDS.length+DOCS.length))}
+function render(){const r=R();document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('on',a.dataset.r===r));
+ const a=document.getElementById('app');a.innerHTML=({home,apply,review,officer}[r]||home)();scrollTo(0,0)}
+function home(){return `<div class="hero"><h1>Catch application mistakes <u>before</u> they reach AICTE</h1>
+<p>Fill your Extension of Approval application. Our validator reads every document, cross-checks it with your form, and blocks submission until errors are fixed. Fewer rejections for colleges, less rework for officers.</p>
+<a class="btn" href="#apply">${pct()>0?'Resume your draft ('+pct()+'%)':'Start application'}</a> <a class="btn g" href="#officer">Officer dashboard</a></div>
+<div class="grid"><div class="card"><b>1. Fill &amp; autosave</b><p class="mu">Every keystroke is saved. Reload and continue where you left.</p></div>
+<div class="card"><b>2. AI review</b><p class="mu">Format, completeness, expiry, regulatory and cross-document checks with evidence.</p></div>
+<div class="card"><b>3. Fix in place</b><p class="mu">Correct each flagged field or re-upload the right document right there.</p></div>
+<div class="card"><b>4. Clean vs flagged</b><p class="mu">Only error-free applications reach the officer's verified queue.</p></div></div>`}
+function apply(){const f=S.f;return `<div class="card"><b>⚡ One-click demo</b><p class="mu">Creates a filled form and 5 document images, then Claude reads the images and checks them. No files needed.</p><div class="row"><button class="btn" onclick="demo(0)">Demo: correct application</button><button class="btn er" onclick="demo(1)">Demo: application with mistakes</button></div></div><div class="card"><div class="row"><b>Application form</b><span class="mu">Draft autosaved · ${pct()}% complete</span></div><div class="bar"><i style="width:${pct()}%"></i></div>
+<div class="grid f">${FIELDS.map(([k,l,t])=>`<div><label>${l}</label>${t==='select'?`<select data-k="${k}"><option value="">Select</option>${['Paid','Pending','Partially paid'].map(o=>`<option ${f[k]===o?'selected':''}>${o}</option>`).join('')}</select>`:`<input data-k="${k}" type="${t}" value="${(f[k]??'').toString().replace(/"/g,'&quot;')}">`}</div>`).join('')}</div></div>
+<div class="card"><b>Supporting documents</b><p class="mu">Upload a JPG/PNG photo or scan. Claude reads it, identifies the document type, extracts name, PAN, dates and area, and checks them against your form. (If AI reading is unavailable, a file-name demo fallback is used.)</p>
+<div class="grid">${DOCS.map(([k,l])=>{const d=S.d[k];return `<div class="card f"><b>${l}</b><br>${dcard(k,d)}</div>`}).join('')}</div></div>
+<div class="row"><a class="btn" href="#review">Run AI review →</a><button class="btn g" onclick="if(confirm('Clear draft?')){S={f:{},d:{}};sv('draft',S);render()}">Clear draft</button></div>`}
+function review(){const I=validate(S),e=I.filter(i=>i.sev==='error'),w=I.filter(i=>i.sev==='warn');
+ return `<div class="card"><div class="row"><b>AI review result</b>${e.length?`<span class="tag t-error">${e.length} errors</span>`:'<span class="tag t-ok">No errors</span>'}${w.length?`<span class="tag t-warn">${w.length} warnings</span>`:''}</div>
+<p class="mu">Submission to the AICTE server is ${e.length?'<b>blocked</b> until all errors are fixed.':'allowed.'} Flags are decision support; officers make the final call.</p>
+<button class="btn ok" ${e.length?'disabled':''} onclick="submitApp()">Submit to AICTE server</button></div>
+${I.map((i,n)=>`<div class="card iss ${i.sev}"><span class="tag t-${i.sev}">${i.sev}</span> <b>${i.msg}</b><div class="mu">Why flagged: ${i.why}</div>
+${i.field.startsWith('doc:')?`<label class="mu">Replace document</label><input type="file" data-d="${i.field.slice(4)}">`:(FIELDS.find(x=>x[0]===i.field)[2]==='select'?'':`<label class="mu">Fix here</label><input data-k="${i.field}" type="${FIELDS.find(x=>x[0]===i.field)[2]}" value="${S.f[i.field]??''}" data-rv="1">`)}</div>`).join('')||'<div class="card">🎉 Everything checks out.</div>'}`}
+function submitApp(){const I=validate(S);if(I.some(i=>i.sev==='error'))return;const L=ld('subs')||[];L.push({id:'EOA-'+(1000+L.length+1),name:S.f.name,issues:I,status:I.length?'flagged':'clean',decision:null});sv('subs',L);S={f:{},d:{}};sv('draft',S);alert('Submitted. Application moved to the officer queue.');location.hash='officer'}
+let tab='clean';
+function seed(){const L=[],base=n=>{const f={name:n,pan:'AAATS1234K',regno:'SOC/2011/'+Math.floor(Math.random()*900+100),regdate:'2011-04-12',pin:'110058',email:'admin@college.edu.in',phone:'9876543210',land:'8000',built:'5200',intake:'600',faculty:'45',nocValid:plus(300),fireValid:plus(200),ter:'Paid'};
+ const d={};DOCS.forEach(([k])=>d[k]={name:k+'.pdf',type:k,text:gen(k,f)});return{f,d}};
+ const muts=[x=>x,x=>x,x=>x,x=>{x.f.pan='AAATS12345'},x=>{x.f.nocValid='2025-01-01';x.d.noc.text=gen('noc',x.f)},x=>{x.d.land.text=x.d.land.text.replace(/Owner:.*/,'Owner: Sunrise Educational Soceity')},x=>{delete x.d.fire},x=>{x.d.pan.name='land_deed.pdf';x.d.pan.type='land'},x=>{x.f.faculty='18'}];
+ ['Sunrise Institute of Technology','Bharat College of Engineering','Gyan Polytechnic','Nalanda Tech Campus','Himalaya Institute','Vidya Engineering College','Tagore School of Design','Kaveri Institute of Management','Aryabhatta Technical Campus'].forEach((n,i)=>{const x=base(n);muts[i](x);const I=validate(x);const e=I.some(j=>j.sev==='error');L.push({id:'EOA-'+(1001+i),name:n,issues:I,status:I.length?'flagged':'clean',decision:null})});sv('subs',L);render()}
+function officer(){const L=ld('subs')||[],c=L.filter(x=>x.status==='clean'),fl=L.filter(x=>x.status==='flagged'),sh=tab==='clean'?c:fl;
+ return `<div class="row" style="margin-bottom:12px"><b style="font-size:18px">Officer dashboard</b><button class="btn g" onclick="seed()">Load 9 demo applications</button><button class="btn g" onclick="sv('subs',[]);render()">Clear all</button></div>
+<div class="tabs"><button class="btn ${tab==='clean'?'':'g'}" onclick="tab='clean';render()">✅ Stored on govt server (${c.length})</button><button class="btn ${tab==='flagged'?'':'g'}" onclick="tab='flagged';render()">⚠️ Blocked at Gate 1 (${fl.length})</button></div>
+${sh.map(x=>`<div class="card"><div class="row"><b>${x.id} · ${x.name}</b><span class="tag t-${x.status==='clean'?'ok':'error'}">${x.status}</span>${x.decision?`<span class="mu">Decision: ${x.decision}</span>`:''}</div>
+${x.issues.map(i=>`<div class="mu">• <span class="tag t-${i.sev}">${i.sev}</span> ${i.msg}</div>`).join('')}
+<div class="row" style="margin-top:8px"><button class="btn ok" onclick="dec('${x.id}','Forwarded for scrutiny')">${x.status==='clean'?'Forward for verification':'Accept with note'}</button><button class="btn er" onclick="dec('${x.id}','Returned to applicant')">Return to applicant</button></div></div>`).join('')||'<div class="card mu">No applications here. Load demo data or submit one from the Apply page.</div>'}`}
+function dec(id,d){const L=ld('subs')||[];L.find(x=>x.id===id).decision=d;sv('subs',L);render()}
+document.addEventListener('input',e=>{const t=e.target;if(t.dataset.k){S.f[t.dataset.k]=t.value;sv('draft',S);if(!t.dataset.rv){const b=document.querySelector('.bar i');if(b)b.style.width=pct()+'%'}}
+ if(t.dataset.t){S.d[t.dataset.t].text=t.value;sv('draft',S)}});
+document.addEventListener('change',e=>{const t=e.target;if(t.dataset.rv)render();if(t.dataset.d&&t.files[0])readDoc(t.dataset.d,t.files[0]);if(t.dataset.k&&t.tagName==='SELECT')sv('draft',S)});
+let SM=null;if(window.claude&&claude.use)claude.use('sample').then(s=>{SM=s;render()}).catch(()=>{});
+const esc=s=>String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;');
+const PROMPT=`You are a document-verification assistant for AICTE (India) applications. The attached image is a document uploaded by a college. Reply ONLY with a JSON object: {"type":"society|pan|land|noc|fire|other","confidence":0-1,"readable":true|false,"name":"institute/society/owner name exactly as printed, or null","pan":"PAN exactly as printed, or null","regno":"registration number or null","validTill":"YYYY-MM-DD or null","area":"land area in sq m as a number string, or null","summary":"one line: what this document is","flags":["only visible signs of alteration, mismatched fonts, missing seal/signature/QR, or blur over key fields"]}. Types: society = Society/Trust registration certificate; pan = PAN card; land = land ownership/lease document; noc = university NOC or affiliation letter; fire = fire safety certificate; other = anything else. Never guess values that are not visible: use null.`;
+async function backendRead(file){const fd=new FormData();fd.append('file',file);const r=await fetch('/api/read',{method:'POST',body:fd});if(!r.ok)throw new Error('Server could not read the document');return r.json()}
+async function readDoc(k,file){S.d[k]={name:file.name,busy:1,type:null,text:''};render();
+ try{if(!SM||!/^image\//.test(file.type))throw{code:'fallback'};
+  const j=await SM.json(PROMPT,{images:[file]});
+  const ty=['society','pan','land','noc','fire'].includes(j.type)?j.type:null,L=[];
+  if(j.name)L.push('Name: '+j.name);if(j.pan)L.push('PAN: '+String(j.pan).replace(/\s/g,''));if(j.regno)L.push('Reg No: '+j.regno);if(j.validTill)L.push('Valid till: '+j.validTill);if(j.area)L.push('Area: '+j.area);
+  S.d[k]={name:file.name,type:ty,text:L.join('\n'),conf:+j.confidence,readable:j.readable!==false,summary:j.summary,flags:j.flags||[],ai:1}
+ }catch(e){const ty=classify(file.name);S.d[k]={name:file.name,type:ty,text:ty?gen(ty,S.f):'',fb:1}}
+ sv('draft',S);render()}
+function dcard(k,d){const ty=d&&d.type?DOCS.find(x=>x[0]===d.type)[1]:'Unrecognised document';
+ return (d?(d.busy?'<span class="tag t-warn">🔍 AI is reading the document…</span>':`<span class="tag ${d.type===k?'t-ok':'t-error'}">${esc(d.name)}</span><div class="mu">Detected: <b>${ty}</b>${d.conf>=0?' ('+Math.round(d.conf*100)+'% confident)':''}</div>${d.summary?`<div class="mu">${esc(d.summary)}</div>`:''}${d.fb?'<div class="mu">⚠️ AI reading unavailable or file is not an image: used the file name only. Upload a JPG/PNG scan or photo.</div>':''}<label>Extracted text${d.ai?' (fix OCR slips if any)':' (demo, editable)'}</label><textarea data-t="${k}">${esc(d.text)}</textarea>`):'<span class="mu">Not uploaded</span>')+`<label>Upload image (JPG / PNG)</label><input type="file" accept="image/*,.pdf" data-d="${k}">`}
+function mkImg(text){return new Promise(r=>{const c=document.createElement('canvas');c.width=1000;c.height=520;const x=c.getContext('2d');x.fillStyle='#faf8f0';x.fillRect(0,0,1000,520);x.strokeStyle='#333';x.lineWidth=4;x.strokeRect(20,20,960,480);x.fillStyle='#111';text.split('\n').forEach((l,i)=>{x.font=(i?'30px':'bold 36px')+' sans-serif';x.fillText(l,60,90+i*70)});c.toBlob(r,'image/png')})}
+async function demo(bad){const f={name:'Sunrise Institute of Technology',pan:'AAATS1234K',regno:'SOC/2011/417',regdate:'2011-04-12',pin:'110058',email:'admin@sunrise.edu.in',phone:'9876543210',land:'8000',built:'5200',intake:'600',faculty:'45',nocValid:plus(300),fireValid:plus(200),ter:'Paid'};
+ if(bad)f.nocValid='2024-01-01';
+ S={f,d:{}};sv('draft',S);render();
+ const F={society:['society_registration.png',gen('society',f)],pan:['pan_card.png',gen('pan',f)],land:['land_deed.png',gen('land',f)],noc:['noc_university.png',gen('noc',f)],fire:['fire_certificate.png',gen('fire',f)]};
+ if(bad){F.society[1]=F.society[1].replace('Institute','Institue');F.pan=['land_deed_copy.png',gen('land',f)]}
+ for(const k in F){const b=await mkImg(F[k][1]);await readDoc(k,new File([b],F[k][0],{type:'image/png'}))}
+ location.hash='review'}
+document.documentElement.dataset.theme=ld('theme')||'dark';document.title='NiyamAI – Two gates before a human decides';
+function toggleTheme(){const t=document.documentElement.dataset.theme==='light'?'dark':'light';document.documentElement.dataset.theme=t;sv('theme',t)}
+document.querySelector('nav').innerHTML='<a href="#home" data-r="home" style="margin-right:auto;font-weight:700;font-size:17px">▌NiyamAI</a><a href="#apply" data-r="apply">Gate 1 live</a><a href="#review" data-r="review">AI review</a><a href="#officer" data-r="officer">Officer console</a><a href="#how" data-r="how">How it works</a><a href="#" onclick="event.preventDefault();toggleTheme()">Theme</a>';
+function render(){const r=R();document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('on',a.dataset.r===r));document.getElementById('app').innerHTML=({home,apply,review,officer,how:home}[r]||home)();if(r==='how'){const h=document.getElementById('how');h&&h.scrollIntoView()}else scrollTo(0,0)}
+function home(){const b=pct()>0?'Resume your draft ('+pct()+'%)':'Run the live triage';
+return `<div class="hero2"><div class="eyebrow">NiyamAI · Smart India Hackathon 2026 · PS 26261</div><h1>Two gates before a <span>human decides.</span></h1><p>NiyamAI screens every Extension of Approval application as it is uploaded, and again before it reaches an officer. Mistakes go back to the institution early. Suspicious files go to a person, with the evidence attached.</p><div class="row"><a class="btn" href="#apply">${b}</a><a class="btn g" href="#officer">Open the officer console</a></div></div>
+<div class="flowwrap"><div class="flow"><div class="track"></div>
+<div class="nd" style="left:10%"><b>Institution</b>Portal upload</div>
+<div class="gl" style="left:30%"><em>GATE 1</em>Complete · typo-free · right type · authentic</div><div class="gt" style="left:30%"></div>
+<div class="nd" style="left:50%"><b>Secure server</b>Hashed · encrypted</div>
+<div class="gl" style="left:70%"><em>GATE 2</em>Evidence dossier</div><div class="gt" style="left:70%"></div>
+<div class="nd" style="left:90%"><b>Officer</b>Decides</div>
+<div class="gl" style="left:20%;top:88%;color:#ff6b7d">↩ Mistake found: returned to the institution</div>
+<i class="pk"></i><i class="pk b"></i><i class="pk bad"></i></div></div>
+<h2 id="how" style="margin:34px 0 12px">How it works</h2><div class="grid">
+<div class="card"><b>Gate 1: at upload</b><p class="mu">Checks completeness, typos, that each file is the right document type in the right slot, and authenticity signals. Errors go back to the institution immediately.</p></div>
+<div class="card"><b>Secure server</b><p class="mu">Only applications that pass Gate 1 are stored.</p></div>
+<div class="card"><b>Gate 2: before the officer</b><p class="mu">Re-analyses documents and information, then builds an evidence dossier.</p></div>
+<div class="card"><b>A human decides</b><p class="mu">The officer cross-verifies the dossier and makes the final decision. AI never decides alone.</p></div></div>`}
+let TJ=null;function loadTess(){return TJ||(TJ=new Promise((ok,no)=>{if(window.Tesseract)return ok(window.Tesseract);const s=document.createElement('script');s.src='https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js';s.onload=()=>ok(window.Tesseract);s.onerror=()=>{TJ=null;no(new Error('OCR engine could not load. Check your internet connection'))};document.head.appendChild(s)}))}
+const KW={society:[['certificate of registration',3],['registrar of societ',3],['societies registration',3],['trust deed',2],['registration',1],['society',1]],pan:[['income tax',3],['permanent account',3],['govt. of india',1],['pan',1]],land:[['sale deed',3],['khasra',3],['lease deed',3],['khata',2],['ownership',2],['land',2],['plot',1],['owner',1]],noc:[['no objection',3],['affiliation',3],['university',1]],fire:[['fire safety',3],['fire department',3],['fire service',3],['fire',2]]};
+async function ocrRead(file){const T=await loadTess();const r=await T.recognize(file,'eng');const text=r.data.text||'',low=text.toLowerCase(),sc={};
+ for(const k in KW)sc[k]=KW[k].reduce((a,[w,n])=>a+(low.includes(w)?n:0),0);
+ const best=Object.keys(sc).sort((a,b)=>sc[b]-sc[a])[0],top=sc[best]||0,g=re=>{const m=text.match(re);return m?m[1].trim():null};
+ const pan=(text.toUpperCase().match(/\b[A-Z]{5}\d{4}[A-Z]\b/)||[])[0]||null;
+ const dm=text.match(/(?:valid(?:ity)?\s*(?:till|upto|up to|until)?|expiry|expires?)\s*[:\-]?\s*(\d{4}-\d{2}-\d{2}|\d{1,2}[\/.-]\d{1,2}[\/.-]\d{4})/i);let vt=null;
+ if(dm){const v=dm[1];vt=/^\d{4}/.test(v)?v:v.split(/[\/.-]/).reverse().map((x,i)=>i?x.padStart(2,'0'):x).join('-')}
+ const ar=g(/area\s*[:\-]?\s*([\d.,]+)/i);
+ return{type:top>=2?best:'other',confidence:Math.min(1,.4+top*.15),readable:text.trim().length>15,name:g(/(?:society|institute|institution|premises|owner|name)\s*[:\-]\s*(.+)/i),pan,regno:g(/reg(?:istration)?\.?\s*(?:no|number)\.?\s*[:\-]?\s*(\S+)/i),validTill:vt,area:ar?ar.replace(/,/g,''):null,summary:'Read with in-browser OCR ('+text.trim().split(/\s+/).length+' words found)',flags:[]}}
+async function readDoc(k,file){S.d[k]={name:file.name,busy:1,type:null,text:''};render();
+ try{
+  const j=await backendRead(file);
+  const ty=['society','pan','land','noc','fire'].includes(j.type)?j.type:null,L=[];
+  if(j.name)L.push('Name: '+j.name);if(j.pan)L.push('PAN: '+String(j.pan).replace(/\s/g,''));if(j.regno)L.push('Reg No: '+j.regno);if(j.validTill)L.push('Valid till: '+j.validTill);if(j.area)L.push('Area: '+j.area);
+  S.d[k]={name:file.name,type:ty,text:L.join('\n'),conf:+j.confidence,readable:j.readable!==false,summary:j.summary,flags:j.flags||[],ai:1,eng:SM?'Claude vision':'In-browser OCR'}
+ }catch(e){S.d[k]={name:file.name,type:null,text:'',readable:false,err:(e&&e.message)||(e&&e.code)||'unknown error'}}
+ sv('draft',S);render()}
+function dcard(k,d){const nm=t=>t?DOCS.find(x=>x[0]===t)[1]:'an unrecognised document';
+ const up=`<label>Upload image (JPG / PNG)</label><input type="file" accept="image/*,.pdf" data-d="${k}">`;
+ if(!d)return '<span class="mu">Not uploaded</span>'+up;
+ if(d.busy)return '<div class="verdict">🔍 Reading document… (first time with in-browser OCR can take about 30 s)</div>';
+ if(d.err)return `<div class="verdict vx">❌ Could not read this file</div><div class="mu">${esc(d.err)}</div>`+up;
+ const ok=d.type===k;
+ return `<div class="verdict ${ok?'vo':'vx'}">${ok?'✅ Correct document for this slot':'❌ Wrong document: this looks like '+nm(d.type)}</div><div class="mu">${esc(d.name)} · ${d.conf>=0?Math.round(d.conf*100)+'% confident · ':''}${d.eng||''}</div>${d.summary?`<div class="mu">${esc(d.summary)}</div>`:''}<label>Extracted text (fix OCR slips if any)</label><textarea data-t="${k}">${esc(d.text)}</textarea>`+up}
+const SEC=[['s1','Institution details','Basic details exactly as in your registration documents.',['name','pin','email','phone']],['s2','Registration & legal','Society / trust registration particulars.',['pan','regno','regdate']],['s3','Infrastructure & faculty','Land, built-up area, intake and faculty.',['land','built','intake','faculty']],['s4','Compliance & validity','Validity of statutory certificates and fee status.',['nocValid','fireValid','ter']],['s5','Supporting documents','Upload a clear JPG/PNG image of each document. The system checks that it is the right document for the slot.',[]]];
+const HINT={name:'As printed on the registration certificate',pan:'10 characters, e.g. ABCDE1234F',regno:'e.g. SOC/2011/417',regdate:'Date of registration',pin:'6-digit PIN code',email:'Official institute email',phone:'10-digit mobile number',land:'In square metres',built:'In square metres, not more than land area',intake:'Total sanctioned seats',faculty:'Number of faculty on roll',nocValid:'Validity date printed on the NOC',fireValid:'Validity date printed on the certificate',ter:'Select current status'};
+function fld(k){const f=FIELDS.find(x=>x[0]===k),l=f[1],t=f[2],v=S.f[k]??'';
+ const inp=t==='select'?`<select data-k="${k}"><option value="">Select</option>${['Paid','Pending','Partially paid'].map(o=>`<option ${v===o?'selected':''}>${o}</option>`).join('')}</select>`:`<input data-k="${k}" type="${t}" ${t==='number'?'min="0"':''} value="${esc(v)}">`;
+ return `<div class="f"><label>${l}</label>${inp}<div class="hint" data-h="${k}" data-def="${HINT[k]||''}">${HINT[k]||''}</div></div>`}
+function refreshHints(){const I=validate(S);
+ document.querySelectorAll('[data-h]').forEach(h=>{const k=h.dataset.h,v=String(S.f[k]??'').trim(),i=v&&I.find(x=>x.field===k),el=document.querySelector('[data-k="'+k+'"]');h.textContent=i?'✖ '+i.msg:(v?'✔ Looks good':h.dataset.def);h.className='hint '+(i?'er':v?'ok':'');if(el)el.className=i?'bad':v?'good':''});
+ SEC.forEach((s,n)=>{const e=document.querySelector('[data-sc="'+n+'"]');if(e&&s[3].length)e.textContent=s[3].filter(k=>String(S.f[k]??'').trim()).length+'/'+s[3].length});
+ const p=document.getElementById('pctTxt');if(p)p.textContent='Autosaved · '+pct()+'% complete'}
+document.addEventListener('input',e=>{if(e.target.dataset.k&&R()==='apply')refreshHints()});document.addEventListener('change',e=>{if(e.target.dataset.k&&R()==='apply')refreshHints()});
+function apply(){setTimeout(refreshHints,0);
+ const cnt=SEC.map(s=>s[3].length?s[3].filter(k=>String(S.f[k]??'').trim()).length+'/'+s[3].length:DOCS.filter(([k])=>S.d[k]).length+'/'+DOCS.length);
+ const side=SEC.map((s,i)=>`<a href="#" onclick="event.preventDefault();document.getElementById('${s[0]}').scrollIntoView({behavior:'smooth'})"><span>${i+1}. ${s[1]}</span><span class="pc" data-sc="${i}">${cnt[i]}</span></a>`).join('');
+ const secs=SEC.map(s=>`<div class="card sec" id="${s[0]}"><h3>${s[1]}</h3><div class="sub">${s[2]}</div>${s[3].length?`<div class="grid f">${s[3].map(fld).join('')}</div>`:`<div class="grid">${DOCS.map(([k,l])=>`<div class="card f"><b>${l}</b><br>${dcard(k,S.d[k])}</div>`).join('')}</div>`}</div>`).join('');
+ return `<div class="eyebrow">Gate 1 · Application intake</div><h2 style="margin:0 0 10px">Extension of Approval application</h2><div class="bar"><i style="width:${pct()}%"></i></div>
+<div class="layout"><div class="side">${side}</div><div>${secs}
+<div class="card"><b>⚡ One-click demo</b><p class="mu">Fills a sample form and uploads 5 sample documents so you can see the checks work.</p><div class="row"><button class="btn" onclick="demo(0)">Demo: correct application</button><button class="btn er" onclick="demo(1)">Demo: application with mistakes</button></div></div>
+<div class="actbar"><span class="mu" id="pctTxt">Autosaved · ${pct()}% complete</span><span style="margin-left:auto"></span><button class="btn g" onclick="if(confirm('Clear draft?')){S={f:{},d:{}};sv('draft',S);render()}">Clear draft</button><a class="btn" href="#review">Check application →</a></div></div></div>`}
+function fixer(i){if(i.field.startsWith('doc:'))return `<label class="mu">Upload the correct document</label><input type="file" accept="image/*,.pdf" data-d="${i.field.slice(4)}">`;const fd=FIELDS.find(x=>x[0]===i.field);
+ if(fd[2]==='select')return `<label class="mu">Correct it here</label><select data-k="${i.field}" data-rv="1">${['','Paid','Pending','Partially paid'].map(o=>`<option ${S.f[i.field]===o?'selected':''}>${o}</option>`).join('')}</select>`;
+ return `<label class="mu">Correct it here</label><input data-k="${i.field}" type="${fd[2]}" value="${esc(S.f[i.field]??'')}" data-rv="1">`}
+function review(){const I=validate(S),n=I.length,busy=DOCS.some(([k])=>S.d[k]&&S.d[k].busy),nm=t=>DOCS.find(x=>x[0]===t)[1];
+ const rows=DOCS.map(([k,l])=>{const d=S.d[k];let st;if(!d)st='❌ Missing';else if(d.busy)st='🔍 Reading…';else if(d.err)st='❌ Could not read';else if(d.type===k)st='✅ Correct document';else st='❌ Wrong document: this is '+(d.type?nm(d.type):'not a recognised document');
+  return `<tr><td>${l}</td><td>${d?esc(d.name):'—'}</td><td>${d&&d.type?nm(d.type):'—'}</td><td><b>${st}</b></td></tr>`}).join('');
+ const ban=busy?'<div class="banner bn">🔍 Documents are still being read…</div>':n?`<div class="banner bx"><b>⛔ Application stopped at Gate 1.</b> It was NOT sent to the government server. Correct the ${n} mistake${n>1?'s':''} below and it will be checked again.</div>`:'<div class="banner bo"><b>✅ All checks passed.</b> No mistakes found. You can now send your application to the government server.</div>';
+ return `${ban}<div class="card scroll"><b>Document check</b><table class="dt"><tr><th>Slot</th><th>File</th><th>Detected as</th><th>Result</th></tr>${rows}</table></div>
+${I.map(i=>`<div class="card iss"><span class="tag t-error">Mistake</span> <b>${esc(i.msg)}</b><div class="mu">Check: ${i.why}</div>${fixer(i)}</div>`).join('')}
+<div class="actbar"><a class="btn g" href="#apply">← Back to form</a><span style="margin-left:auto"></span><button class="btn ok" ${n||busy?'disabled':''} onclick="submitApp()">${n?'Fix the mistakes to continue':'Send to government server →'}</button></div>`}
+async function submitApp(){if(validate(S).length||DOCS.some(([k])=>!S.d[k]||S.d[k].busy))return;
+ let hash='unavailable';try{const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify([S.f,Object.values(S.d).map(d=>d.name+d.text)])));hash=[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')}catch(e){}
+ const L=ld('subs')||[],id='EOA-'+(1001+L.length);L.push({id,name:S.f.name,issues:[],status:'clean',decision:null,hash});sv('subs',L);S={f:{},d:{}};sv('draft',S);
+ document.getElementById('app').innerHTML=`<div class="banner bo"><b>✅ Sent to the government server.</b></div><div class="card"><b>${id}</b><p class="mu">Gate 1 passed with zero mistakes. The application is stored on the government server and is waiting for officer verification.</p><div class="mu" style="word-break:break-all">SHA-256: ${hash}</div><div class="row" style="margin-top:12px"><a class="btn" href="#officer">Open officer console</a><a class="btn g" href="#home">Back to home</a></div></div>`}
+addEventListener('hashchange',render);render();
+</script></body></html>

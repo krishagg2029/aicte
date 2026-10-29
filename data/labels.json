@@ -1,0 +1,1802 @@
+[
+ {
+  "file": "data/docs/society_0.png",
+  "type": "society",
+  "name": "Vidya College of Engineering",
+  "pan": "KBVCP9313D",
+  "regno": "SOC/2006/188",
+  "validTill": "2029-07-03",
+  "area": "7943"
+ },
+ {
+  "file": "data/docs/society_1.png",
+  "type": "society",
+  "name": "Sunrise Institute of Management",
+  "pan": "CFRYP7499A",
+  "regno": "SOC/2012/147",
+  "validTill": "2030-03-10",
+  "area": "10867"
+ },
+ {
+  "file": "data/docs/society_2.png",
+  "type": "society",
+  "name": "Saraswati Polytechnic",
+  "pan": "NSCPE2596J",
+  "regno": "SOC/2007/677",
+  "validTill": "2026-10-07",
+  "area": "12133"
+ },
+ {
+  "file": "data/docs/society_3.png",
+  "type": "society",
+  "name": "Vidya Technical Campus",
+  "pan": "PLGVT4999B",
+  "regno": "SOC/2014/637",
+  "validTill": "2029-06-24",
+  "area": "11353"
+ },
+ {
+  "file": "data/docs/society_4.png",
+  "type": "society",
+  "name": "Bharat Institute of Management",
+  "pan": "KUDMA2271J",
+  "regno": "SOC/2015/448",
+  "validTill": "2031-06-20",
+  "area": "12137"
+ },
+ {
+  "file": "data/docs/society_5.png",
+  "type": "society",
+  "name": "Bharat Institute of Technology",
+  "pan": "YLSBT8301E",
+  "regno": "SOC/2017/784",
+  "validTill": "2028-01-15",
+  "area": "9823"
+ },
+ {
+  "file": "data/docs/society_6.png",
+  "type": "society",
+  "name": "Aryabhatta Institute of Technology",
+  "pan": "FGTKY9134B",
+  "regno": "SOC/2010/559",
+  "validTill": "2029-09-09",
+  "area": "18473"
+ },
+ {
+  "file": "data/docs/society_7.png",
+  "type": "society",
+  "name": "Tagore Polytechnic",
+  "pan": "TZSJF2359C",
+  "regno": "SOC/2009/337",
+  "validTill": "2031-04-01",
+  "area": "11945"
+ },
+ {
+  "file": "data/docs/society_8.png",
+  "type": "society",
+  "name": "Himalaya Polytechnic",
+  "pan": "AKJPY9445K",
+  "regno": "SOC/2006/567",
+  "validTill": "2031-09-13",
+  "area": "10521"
+ },
+ {
+  "file": "data/docs/society_9.png",
+  "type": "society",
+  "name": "Aryabhatta Technical Campus",
+  "pan": "BBEDH1861B",
+  "regno": "SOC/2005/680",
+  "validTill": "2027-09-04",
+  "area": "19547"
+ },
+ {
+  "file": "data/docs/society_10.png",
+  "type": "society",
+  "name": "Bharat College of Engineering",
+  "pan": "RDFHJ3012B",
+  "regno": "SOC/2020/577",
+  "validTill": "2029-08-10",
+  "area": "5407"
+ },
+ {
+  "file": "data/docs/society_11.png",
+  "type": "society",
+  "name": "Vidya Polytechnic",
+  "pan": "MSMEY6926C",
+  "regno": "SOC/2005/876",
+  "validTill": "2030-05-21",
+  "area": "18144"
+ },
+ {
+  "file": "data/docs/society_12.png",
+  "type": "society",
+  "name": "Tagore Polytechnic",
+  "pan": "XJFNM4654K",
+  "regno": "SOC/2011/925",
+  "validTill": "2027-07-24",
+  "area": "17161"
+ },
+ {
+  "file": "data/docs/society_13.png",
+  "type": "society",
+  "name": "Aryabhatta Polytechnic",
+  "pan": "TZVLE6640H",
+  "regno": "SOC/2016/473",
+  "validTill": "2026-04-04",
+  "area": "7716"
+ },
+ {
+  "file": "data/docs/society_14.png",
+  "type": "society",
+  "name": "Nalanda Technical Campus",
+  "pan": "RXWMS2389L",
+  "regno": "SOC/2008/497",
+  "validTill": "2031-04-16",
+  "area": "18565"
+ },
+ {
+  "file": "data/docs/society_15.png",
+  "type": "society",
+  "name": "Vidya Institute of Technology",
+  "pan": "VZKKY3602C",
+  "regno": "SOC/2009/128",
+  "validTill": "2027-10-15",
+  "area": "17213"
+ },
+ {
+  "file": "data/docs/society_16.png",
+  "type": "society",
+  "name": "Saraswati Technical Campus",
+  "pan": "SJNDA2683J",
+  "regno": "SOC/2009/544",
+  "validTill": "2027-04-01",
+  "area": "8126"
+ },
+ {
+  "file": "data/docs/society_17.png",
+  "type": "society",
+  "name": "Nalanda Institute of Management",
+  "pan": "HNWBU8506L",
+  "regno": "SOC/2018/946",
+  "validTill": "2030-03-18",
+  "area": "6487"
+ },
+ {
+  "file": "data/docs/society_18.png",
+  "type": "society",
+  "name": "Aryabhatta College of Engineering",
+  "pan": "PUDDR2971J",
+  "regno": "SOC/2006/433",
+  "validTill": "2031-09-17",
+  "area": "13100"
+ },
+ {
+  "file": "data/docs/society_19.png",
+  "type": "society",
+  "name": "Tagore Institute of Technology",
+  "pan": "FGUMN2038H",
+  "regno": "SOC/2015/727",
+  "validTill": "2030-10-17",
+  "area": "7267"
+ },
+ {
+  "file": "data/docs/society_20.png",
+  "type": "society",
+  "name": "Tagore Institute of Management",
+  "pan": "VMFNX5253J",
+  "regno": "SOC/2011/960",
+  "validTill": "2029-03-14",
+  "area": "5992"
+ },
+ {
+  "file": "data/docs/society_21.png",
+  "type": "society",
+  "name": "Bharat College of Engineering",
+  "pan": "KEGCU6999C",
+  "regno": "SOC/2013/240",
+  "validTill": "2029-04-24",
+  "area": "19605"
+ },
+ {
+  "file": "data/docs/society_22.png",
+  "type": "society",
+  "name": "Gyan College of Engineering",
+  "pan": "DKMHE6218B",
+  "regno": "SOC/2016/119",
+  "validTill": "2028-09-15",
+  "area": "11216"
+ },
+ {
+  "file": "data/docs/society_23.png",
+  "type": "society",
+  "name": "Vidya Institute of Management",
+  "pan": "RMBZV2716B",
+  "regno": "SOC/2013/378",
+  "validTill": "2026-03-09",
+  "area": "16382"
+ },
+ {
+  "file": "data/docs/society_24.png",
+  "type": "society",
+  "name": "Lakshmi Polytechnic",
+  "pan": "KNMMH5572A",
+  "regno": "SOC/2010/535",
+  "validTill": "2026-05-01",
+  "area": "14394"
+ },
+ {
+  "file": "data/docs/society_25.png",
+  "type": "society",
+  "name": "Bharat Institute of Management",
+  "pan": "WBWLH7844E",
+  "regno": "SOC/2009/144",
+  "validTill": "2030-12-08",
+  "area": "19370"
+ },
+ {
+  "file": "data/docs/society_26.png",
+  "type": "society",
+  "name": "Himalaya Institute of Technology",
+  "pan": "EYRNE8302J",
+  "regno": "SOC/2010/377",
+  "validTill": "2028-01-09",
+  "area": "4605"
+ },
+ {
+  "file": "data/docs/society_27.png",
+  "type": "society",
+  "name": "Tagore Institute of Management",
+  "pan": "ZMFLS8080L",
+  "regno": "SOC/2020/659",
+  "validTill": "2029-09-10",
+  "area": "15267"
+ },
+ {
+  "file": "data/docs/society_28.png",
+  "type": "society",
+  "name": "Vidya College of Engineering",
+  "pan": "WTRKH1891C",
+  "regno": "SOC/2005/172",
+  "validTill": "2031-12-09",
+  "area": "11057"
+ },
+ {
+  "file": "data/docs/society_29.png",
+  "type": "society",
+  "name": "Lakshmi Technical Campus",
+  "pan": "XSGFG8527C",
+  "regno": "SOC/2010/375",
+  "validTill": "2029-01-09",
+  "area": "9966"
+ },
+ {
+  "file": "data/docs/society_30.png",
+  "type": "society",
+  "name": "Vidya College of Engineering",
+  "pan": "AXFEH2374H",
+  "regno": "SOC/2013/614",
+  "validTill": "2031-04-08",
+  "area": "12269"
+ },
+ {
+  "file": "data/docs/society_31.png",
+  "type": "society",
+  "name": "Himalaya Institute of Technology",
+  "pan": "DPKGR2384K",
+  "regno": "SOC/2009/773",
+  "validTill": "2031-10-13",
+  "area": "16522"
+ },
+ {
+  "file": "data/docs/society_32.png",
+  "type": "society",
+  "name": "Gyan Polytechnic",
+  "pan": "TRBWX8032M",
+  "regno": "SOC/2009/636",
+  "validTill": "2030-10-27",
+  "area": "17318"
+ },
+ {
+  "file": "data/docs/society_33.png",
+  "type": "society",
+  "name": "Saraswati College of Engineering",
+  "pan": "BARZJ8395J",
+  "regno": "SOC/2006/742",
+  "validTill": "2026-11-18",
+  "area": "15152"
+ },
+ {
+  "file": "data/docs/society_34.png",
+  "type": "society",
+  "name": "Sunrise Technical Campus",
+  "pan": "VUMNS2082M",
+  "regno": "SOC/2020/358",
+  "validTill": "2026-05-08",
+  "area": "15949"
+ },
+ {
+  "file": "data/docs/society_35.png",
+  "type": "society",
+  "name": "Ganga Technical Campus",
+  "pan": "MJMSU4248B",
+  "regno": "SOC/2009/439",
+  "validTill": "2028-11-24",
+  "area": "15352"
+ },
+ {
+  "file": "data/docs/society_36.png",
+  "type": "society",
+  "name": "Gyan Institute of Technology",
+  "pan": "MMZCF9021E",
+  "regno": "SOC/2014/575",
+  "validTill": "2029-08-25",
+  "area": "5941"
+ },
+ {
+  "file": "data/docs/society_37.png",
+  "type": "society",
+  "name": "Nalanda Polytechnic",
+  "pan": "ZYALV8363E",
+  "regno": "SOC/2017/314",
+  "validTill": "2027-02-19",
+  "area": "5479"
+ },
+ {
+  "file": "data/docs/society_38.png",
+  "type": "society",
+  "name": "Himalaya Polytechnic",
+  "pan": "DVMXT4790H",
+  "regno": "SOC/2020/503",
+  "validTill": "2026-03-01",
+  "area": "19564"
+ },
+ {
+  "file": "data/docs/society_39.png",
+  "type": "society",
+  "name": "Kaveri Polytechnic",
+  "pan": "TKJCH6317F",
+  "regno": "SOC/2017/222",
+  "validTill": "2027-12-01",
+  "area": "18771"
+ },
+ {
+  "file": "data/docs/pan_0.png",
+  "type": "pan",
+  "name": "Vidya Institute of Technology",
+  "pan": "KZPJK5508A",
+  "regno": "SOC/2013/204",
+  "validTill": "2026-11-10",
+  "area": "14403"
+ },
+ {
+  "file": "data/docs/pan_1.png",
+  "type": "pan",
+  "name": "Himalaya Technical Campus",
+  "pan": "MEJYX7554J",
+  "regno": "SOC/2011/836",
+  "validTill": "2026-01-24",
+  "area": "10731"
+ },
+ {
+  "file": "data/docs/pan_2.png",
+  "type": "pan",
+  "name": "Lakshmi Polytechnic",
+  "pan": "MXNDK5616E",
+  "regno": "SOC/2013/856",
+  "validTill": "2031-11-09",
+  "area": "10655"
+ },
+ {
+  "file": "data/docs/pan_3.png",
+  "type": "pan",
+  "name": "Aryabhatta Institute of Management",
+  "pan": "SCRBM9144J",
+  "regno": "SOC/2012/563",
+  "validTill": "2028-08-14",
+  "area": "6287"
+ },
+ {
+  "file": "data/docs/pan_4.png",
+  "type": "pan",
+  "name": "Bharat College of Engineering",
+  "pan": "HCFFP1329M",
+  "regno": "SOC/2018/492",
+  "validTill": "2029-12-17",
+  "area": "7440"
+ },
+ {
+  "file": "data/docs/pan_5.png",
+  "type": "pan",
+  "name": "Sunrise Technical Campus",
+  "pan": "GZCMR4538B",
+  "regno": "SOC/2013/354",
+  "validTill": "2029-07-21",
+  "area": "11304"
+ },
+ {
+  "file": "data/docs/pan_6.png",
+  "type": "pan",
+  "name": "Sunrise College of Engineering",
+  "pan": "ATXLP1002B",
+  "regno": "SOC/2017/945",
+  "validTill": "2030-08-15",
+  "area": "8070"
+ },
+ {
+  "file": "data/docs/pan_7.png",
+  "type": "pan",
+  "name": "Gyan College of Engineering",
+  "pan": "NSYTR8492B",
+  "regno": "SOC/2006/101",
+  "validTill": "2027-04-19",
+  "area": "19071"
+ },
+ {
+  "file": "data/docs/pan_8.png",
+  "type": "pan",
+  "name": "Himalaya College of Engineering",
+  "pan": "RNLUC5920J",
+  "regno": "SOC/2011/497",
+  "validTill": "2028-04-26",
+  "area": "13847"
+ },
+ {
+  "file": "data/docs/pan_9.png",
+  "type": "pan",
+  "name": "Himalaya Technical Campus",
+  "pan": "GHWFN9962D",
+  "regno": "SOC/2005/521",
+  "validTill": "2031-11-10",
+  "area": "4906"
+ },
+ {
+  "file": "data/docs/pan_10.png",
+  "type": "pan",
+  "name": "Lakshmi Technical Campus",
+  "pan": "BFKJM6538M",
+  "regno": "SOC/2018/471",
+  "validTill": "2031-07-07",
+  "area": "4110"
+ },
+ {
+  "file": "data/docs/pan_11.png",
+  "type": "pan",
+  "name": "Tagore Institute of Technology",
+  "pan": "EZHVF4628E",
+  "regno": "SOC/2014/211",
+  "validTill": "2030-08-20",
+  "area": "7068"
+ },
+ {
+  "file": "data/docs/pan_12.png",
+  "type": "pan",
+  "name": "Kaveri Institute of Technology",
+  "pan": "YDKEZ3325G",
+  "regno": "SOC/2006/826",
+  "validTill": "2026-03-13",
+  "area": "11366"
+ },
+ {
+  "file": "data/docs/pan_13.png",
+  "type": "pan",
+  "name": "Ganga Institute of Technology",
+  "pan": "ZYHEY8661A",
+  "regno": "SOC/2014/780",
+  "validTill": "2031-07-27",
+  "area": "10125"
+ },
+ {
+  "file": "data/docs/pan_14.png",
+  "type": "pan",
+  "name": "Gyan Institute of Technology",
+  "pan": "AGJYC4398G",
+  "regno": "SOC/2016/887",
+  "validTill": "2028-07-03",
+  "area": "4807"
+ },
+ {
+  "file": "data/docs/pan_15.png",
+  "type": "pan",
+  "name": "Vidya Institute of Management",
+  "pan": "YEJXA7730D",
+  "regno": "SOC/2017/141",
+  "validTill": "2029-01-15",
+  "area": "5025"
+ },
+ {
+  "file": "data/docs/pan_16.png",
+  "type": "pan",
+  "name": "Himalaya College of Engineering",
+  "pan": "UXHGZ1714E",
+  "regno": "SOC/2015/382",
+  "validTill": "2028-01-24",
+  "area": "16380"
+ },
+ {
+  "file": "data/docs/pan_17.png",
+  "type": "pan",
+  "name": "Bharat Institute of Technology",
+  "pan": "VCTLU5113G",
+  "regno": "SOC/2020/235",
+  "validTill": "2029-03-01",
+  "area": "17149"
+ },
+ {
+  "file": "data/docs/pan_18.png",
+  "type": "pan",
+  "name": "Ganga College of Engineering",
+  "pan": "PHHJU2294J",
+  "regno": "SOC/2011/501",
+  "validTill": "2027-04-14",
+  "area": "5060"
+ },
+ {
+  "file": "data/docs/pan_19.png",
+  "type": "pan",
+  "name": "Tagore Institute of Management",
+  "pan": "HZXZG2377D",
+  "regno": "SOC/2008/531",
+  "validTill": "2029-12-15",
+  "area": "6837"
+ },
+ {
+  "file": "data/docs/pan_20.png",
+  "type": "pan",
+  "name": "Aryabhatta Institute of Management",
+  "pan": "XFNUU5815E",
+  "regno": "SOC/2013/680",
+  "validTill": "2028-06-09",
+  "area": "16092"
+ },
+ {
+  "file": "data/docs/pan_21.png",
+  "type": "pan",
+  "name": "Nalanda College of Engineering",
+  "pan": "FDXPH7489E",
+  "regno": "SOC/2012/619",
+  "validTill": "2030-04-21",
+  "area": "17245"
+ },
+ {
+  "file": "data/docs/pan_22.png",
+  "type": "pan",
+  "name": "Sunrise Institute of Technology",
+  "pan": "AXFLJ5811D",
+  "regno": "SOC/2008/151",
+  "validTill": "2027-10-27",
+  "area": "13555"
+ },
+ {
+  "file": "data/docs/pan_23.png",
+  "type": "pan",
+  "name": "Vidya Institute of Management",
+  "pan": "WLFUY2733L",
+  "regno": "SOC/2016/322",
+  "validTill": "2026-06-11",
+  "area": "6316"
+ },
+ {
+  "file": "data/docs/pan_24.png",
+  "type": "pan",
+  "name": "Sunrise Institute of Management",
+  "pan": "TYVVK7091C",
+  "regno": "SOC/2014/179",
+  "validTill": "2027-01-26",
+  "area": "12120"
+ },
+ {
+  "file": "data/docs/pan_25.png",
+  "type": "pan",
+  "name": "Kaveri Institute of Technology",
+  "pan": "VSDNS7517M",
+  "regno": "SOC/2013/519",
+  "validTill": "2028-11-10",
+  "area": "10845"
+ },
+ {
+  "file": "data/docs/pan_26.png",
+  "type": "pan",
+  "name": "Ganga Institute of Management",
+  "pan": "XKAUV4230G",
+  "regno": "SOC/2017/308",
+  "validTill": "2026-07-06",
+  "area": "10942"
+ },
+ {
+  "file": "data/docs/pan_27.png",
+  "type": "pan",
+  "name": "Kaveri Institute of Management",
+  "pan": "XLDAN7499B",
+  "regno": "SOC/2016/854",
+  "validTill": "2030-03-05",
+  "area": "9700"
+ },
+ {
+  "file": "data/docs/pan_28.png",
+  "type": "pan",
+  "name": "Gyan Institute of Technology",
+  "pan": "CMVZE3075A",
+  "regno": "SOC/2020/422",
+  "validTill": "2026-10-21",
+  "area": "10355"
+ },
+ {
+  "file": "data/docs/pan_29.png",
+  "type": "pan",
+  "name": "Saraswati College of Engineering",
+  "pan": "RWRRE8748C",
+  "regno": "SOC/2011/142",
+  "validTill": "2029-09-06",
+  "area": "10284"
+ },
+ {
+  "file": "data/docs/pan_30.png",
+  "type": "pan",
+  "name": "Nalanda College of Engineering",
+  "pan": "ANUAW2928G",
+  "regno": "SOC/2019/663",
+  "validTill": "2031-05-21",
+  "area": "10882"
+ },
+ {
+  "file": "data/docs/pan_31.png",
+  "type": "pan",
+  "name": "Kaveri Technical Campus",
+  "pan": "SLLAR9019H",
+  "regno": "SOC/2012/557",
+  "validTill": "2030-08-27",
+  "area": "6942"
+ },
+ {
+  "file": "data/docs/pan_32.png",
+  "type": "pan",
+  "name": "Bharat Institute of Technology",
+  "pan": "CKCLM1667A",
+  "regno": "SOC/2009/184",
+  "validTill": "2031-06-25",
+  "area": "15802"
+ },
+ {
+  "file": "data/docs/pan_33.png",
+  "type": "pan",
+  "name": "Tagore Technical Campus",
+  "pan": "SVABR2795D",
+  "regno": "SOC/2009/603",
+  "validTill": "2028-03-22",
+  "area": "16916"
+ },
+ {
+  "file": "data/docs/pan_34.png",
+  "type": "pan",
+  "name": "Bharat Polytechnic",
+  "pan": "RFHRX8477C",
+  "regno": "SOC/2013/614",
+  "validTill": "2029-04-19",
+  "area": "8306"
+ },
+ {
+  "file": "data/docs/pan_35.png",
+  "type": "pan",
+  "name": "Vidya Polytechnic",
+  "pan": "AEDYS7174C",
+  "regno": "SOC/2013/217",
+  "validTill": "2030-01-21",
+  "area": "18062"
+ },
+ {
+  "file": "data/docs/pan_36.png",
+  "type": "pan",
+  "name": "Tagore Institute of Management",
+  "pan": "PXCZR7459M",
+  "regno": "SOC/2016/371",
+  "validTill": "2029-06-19",
+  "area": "6395"
+ },
+ {
+  "file": "data/docs/pan_37.png",
+  "type": "pan",
+  "name": "Aryabhatta College of Engineering",
+  "pan": "EUBVF6122M",
+  "regno": "SOC/2005/865",
+  "validTill": "2026-04-05",
+  "area": "8767"
+ },
+ {
+  "file": "data/docs/pan_38.png",
+  "type": "pan",
+  "name": "Kaveri Institute of Management",
+  "pan": "JBMRB1891A",
+  "regno": "SOC/2016/411",
+  "validTill": "2026-09-12",
+  "area": "12750"
+ },
+ {
+  "file": "data/docs/pan_39.png",
+  "type": "pan",
+  "name": "Himalaya Institute of Management",
+  "pan": "DJWDA4990M",
+  "regno": "SOC/2009/561",
+  "validTill": "2026-02-21",
+  "area": "6370"
+ },
+ {
+  "file": "data/docs/land_0.png",
+  "type": "land",
+  "name": "Kaveri Polytechnic",
+  "pan": "ZBVXP8270K",
+  "regno": "SOC/2020/354",
+  "validTill": "2027-01-02",
+  "area": "5008"
+ },
+ {
+  "file": "data/docs/land_1.png",
+  "type": "land",
+  "name": "Gyan College of Engineering",
+  "pan": "DXCRS4231C",
+  "regno": "SOC/2018/304",
+  "validTill": "2030-10-21",
+  "area": "12305"
+ },
+ {
+  "file": "data/docs/land_2.png",
+  "type": "land",
+  "name": "Saraswati College of Engineering",
+  "pan": "MBRZT8830M",
+  "regno": "SOC/2005/484",
+  "validTill": "2029-12-15",
+  "area": "5318"
+ },
+ {
+  "file": "data/docs/land_3.png",
+  "type": "land",
+  "name": "Gyan College of Engineering",
+  "pan": "ZGRCX5313M",
+  "regno": "SOC/2006/372",
+  "validTill": "2031-09-22",
+  "area": "11144"
+ },
+ {
+  "file": "data/docs/land_4.png",
+  "type": "land",
+  "name": "Himalaya Polytechnic",
+  "pan": "RZEXA5265D",
+  "regno": "SOC/2011/263",
+  "validTill": "2031-06-07",
+  "area": "18420"
+ },
+ {
+  "file": "data/docs/land_5.png",
+  "type": "land",
+  "name": "Nalanda Technical Campus",
+  "pan": "XRSSZ8692H",
+  "regno": "SOC/2005/978",
+  "validTill": "2026-07-24",
+  "area": "7831"
+ },
+ {
+  "file": "data/docs/land_6.png",
+  "type": "land",
+  "name": "Nalanda Technical Campus",
+  "pan": "RBXDA2747K",
+  "regno": "SOC/2010/453",
+  "validTill": "2027-12-01",
+  "area": "4505"
+ },
+ {
+  "file": "data/docs/land_7.png",
+  "type": "land",
+  "name": "Lakshmi Institute of Technology",
+  "pan": "TTBPJ9747L",
+  "regno": "SOC/2007/988",
+  "validTill": "2031-07-04",
+  "area": "8039"
+ },
+ {
+  "file": "data/docs/land_8.png",
+  "type": "land",
+  "name": "Sunrise Institute of Technology",
+  "pan": "YXUCU5708H",
+  "regno": "SOC/2008/235",
+  "validTill": "2026-11-07",
+  "area": "8824"
+ },
+ {
+  "file": "data/docs/land_9.png",
+  "type": "land",
+  "name": "Himalaya Institute of Technology",
+  "pan": "JYBUX9253H",
+  "regno": "SOC/2014/733",
+  "validTill": "2031-01-26",
+  "area": "10765"
+ },
+ {
+  "file": "data/docs/land_10.png",
+  "type": "land",
+  "name": "Bharat Polytechnic",
+  "pan": "LBPTW5704C",
+  "regno": "SOC/2018/101",
+  "validTill": "2030-04-10",
+  "area": "16487"
+ },
+ {
+  "file": "data/docs/land_11.png",
+  "type": "land",
+  "name": "Sunrise Polytechnic",
+  "pan": "MMVEM6688J",
+  "regno": "SOC/2013/691",
+  "validTill": "2027-05-27",
+  "area": "7517"
+ },
+ {
+  "file": "data/docs/land_12.png",
+  "type": "land",
+  "name": "Aryabhatta College of Engineering",
+  "pan": "CRBVT2713L",
+  "regno": "SOC/2015/464",
+  "validTill": "2026-07-13",
+  "area": "18611"
+ },
+ {
+  "file": "data/docs/land_13.png",
+  "type": "land",
+  "name": "Kaveri Institute of Technology",
+  "pan": "JGKND4826H",
+  "regno": "SOC/2009/644",
+  "validTill": "2030-12-25",
+  "area": "13918"
+ },
+ {
+  "file": "data/docs/land_14.png",
+  "type": "land",
+  "name": "Saraswati Polytechnic",
+  "pan": "MWLNH8588H",
+  "regno": "SOC/2013/693",
+  "validTill": "2027-03-11",
+  "area": "11569"
+ },
+ {
+  "file": "data/docs/land_15.png",
+  "type": "land",
+  "name": "Nalanda Institute of Management",
+  "pan": "EGTWD3555D",
+  "regno": "SOC/2015/717",
+  "validTill": "2030-06-06",
+  "area": "7870"
+ },
+ {
+  "file": "data/docs/land_16.png",
+  "type": "land",
+  "name": "Himalaya Institute of Technology",
+  "pan": "DSEDD5949M",
+  "regno": "SOC/2014/545",
+  "validTill": "2028-04-04",
+  "area": "14452"
+ },
+ {
+  "file": "data/docs/land_17.png",
+  "type": "land",
+  "name": "Nalanda Technical Campus",
+  "pan": "LAWLF5853H",
+  "regno": "SOC/2005/245",
+  "validTill": "2028-10-24",
+  "area": "10630"
+ },
+ {
+  "file": "data/docs/land_18.png",
+  "type": "land",
+  "name": "Kaveri Institute of Management",
+  "pan": "PRWSS4745L",
+  "regno": "SOC/2010/756",
+  "validTill": "2026-08-14",
+  "area": "9128"
+ },
+ {
+  "file": "data/docs/land_19.png",
+  "type": "land",
+  "name": "Bharat Technical Campus",
+  "pan": "FKTDW8909H",
+  "regno": "SOC/2005/736",
+  "validTill": "2029-09-22",
+  "area": "14831"
+ },
+ {
+  "file": "data/docs/land_20.png",
+  "type": "land",
+  "name": "Lakshmi Polytechnic",
+  "pan": "UJMZA9902D",
+  "regno": "SOC/2010/833",
+  "validTill": "2027-09-12",
+  "area": "5656"
+ },
+ {
+  "file": "data/docs/land_21.png",
+  "type": "land",
+  "name": "Tagore College of Engineering",
+  "pan": "TMRWM7723M",
+  "regno": "SOC/2019/315",
+  "validTill": "2031-03-13",
+  "area": "12417"
+ },
+ {
+  "file": "data/docs/land_22.png",
+  "type": "land",
+  "name": "Ganga Institute of Management",
+  "pan": "JBGKA7858G",
+  "regno": "SOC/2016/694",
+  "validTill": "2028-02-08",
+  "area": "8972"
+ },
+ {
+  "file": "data/docs/land_23.png",
+  "type": "land",
+  "name": "Nalanda Technical Campus",
+  "pan": "LDYBV4164H",
+  "regno": "SOC/2012/934",
+  "validTill": "2027-06-22",
+  "area": "14466"
+ },
+ {
+  "file": "data/docs/land_24.png",
+  "type": "land",
+  "name": "Aryabhatta Polytechnic",
+  "pan": "URULV4775E",
+  "regno": "SOC/2017/803",
+  "validTill": "2028-07-22",
+  "area": "7045"
+ },
+ {
+  "file": "data/docs/land_25.png",
+  "type": "land",
+  "name": "Himalaya Polytechnic",
+  "pan": "FGMKR6938C",
+  "regno": "SOC/2014/974",
+  "validTill": "2029-01-03",
+  "area": "17564"
+ },
+ {
+  "file": "data/docs/land_26.png",
+  "type": "land",
+  "name": "Gyan Institute of Management",
+  "pan": "WRAAY5800E",
+  "regno": "SOC/2008/692",
+  "validTill": "2027-04-06",
+  "area": "16718"
+ },
+ {
+  "file": "data/docs/land_27.png",
+  "type": "land",
+  "name": "Nalanda Technical Campus",
+  "pan": "VDXPU9986L",
+  "regno": "SOC/2014/302",
+  "validTill": "2029-12-07",
+  "area": "12696"
+ },
+ {
+  "file": "data/docs/land_28.png",
+  "type": "land",
+  "name": "Lakshmi Institute of Technology",
+  "pan": "NGFDM1957H",
+  "regno": "SOC/2019/247",
+  "validTill": "2031-08-08",
+  "area": "12162"
+ },
+ {
+  "file": "data/docs/land_29.png",
+  "type": "land",
+  "name": "Ganga Institute of Technology",
+  "pan": "DHTMG8631F",
+  "regno": "SOC/2018/528",
+  "validTill": "2031-02-06",
+  "area": "14437"
+ },
+ {
+  "file": "data/docs/land_30.png",
+  "type": "land",
+  "name": "Sunrise Institute of Technology",
+  "pan": "RSYHZ9366H",
+  "regno": "SOC/2020/875",
+  "validTill": "2027-01-07",
+  "area": "15766"
+ },
+ {
+  "file": "data/docs/land_31.png",
+  "type": "land",
+  "name": "Vidya Institute of Technology",
+  "pan": "WJLNU4452E",
+  "regno": "SOC/2018/450",
+  "validTill": "2029-05-18",
+  "area": "4863"
+ },
+ {
+  "file": "data/docs/land_32.png",
+  "type": "land",
+  "name": "Vidya Technical Campus",
+  "pan": "KMGMZ9064B",
+  "regno": "SOC/2015/296",
+  "validTill": "2028-12-10",
+  "area": "6090"
+ },
+ {
+  "file": "data/docs/land_33.png",
+  "type": "land",
+  "name": "Bharat Institute of Technology",
+  "pan": "KNKPK2777A",
+  "regno": "SOC/2006/294",
+  "validTill": "2029-10-25",
+  "area": "14780"
+ },
+ {
+  "file": "data/docs/land_34.png",
+  "type": "land",
+  "name": "Tagore Institute of Management",
+  "pan": "JDSSX2359D",
+  "regno": "SOC/2006/783",
+  "validTill": "2031-08-21",
+  "area": "16495"
+ },
+ {
+  "file": "data/docs/land_35.png",
+  "type": "land",
+  "name": "Gyan Institute of Technology",
+  "pan": "KCYAX3272E",
+  "regno": "SOC/2013/983",
+  "validTill": "2028-03-14",
+  "area": "4561"
+ },
+ {
+  "file": "data/docs/land_36.png",
+  "type": "land",
+  "name": "Saraswati Institute of Management",
+  "pan": "YBPAC7898K",
+  "regno": "SOC/2017/557",
+  "validTill": "2026-01-22",
+  "area": "10342"
+ },
+ {
+  "file": "data/docs/land_37.png",
+  "type": "land",
+  "name": "Gyan Technical Campus",
+  "pan": "UNBLX1254G",
+  "regno": "SOC/2005/109",
+  "validTill": "2031-11-04",
+  "area": "19832"
+ },
+ {
+  "file": "data/docs/land_38.png",
+  "type": "land",
+  "name": "Bharat College of Engineering",
+  "pan": "LGPLU1821F",
+  "regno": "SOC/2009/847",
+  "validTill": "2026-05-21",
+  "area": "13133"
+ },
+ {
+  "file": "data/docs/land_39.png",
+  "type": "land",
+  "name": "Lakshmi Polytechnic",
+  "pan": "YBABX2305G",
+  "regno": "SOC/2014/419",
+  "validTill": "2031-10-06",
+  "area": "19690"
+ },
+ {
+  "file": "data/docs/noc_0.png",
+  "type": "noc",
+  "name": "Saraswati Institute of Technology",
+  "pan": "HYTLD2912F",
+  "regno": "SOC/2010/744",
+  "validTill": "2029-08-13",
+  "area": "16748"
+ },
+ {
+  "file": "data/docs/noc_1.png",
+  "type": "noc",
+  "name": "Saraswati Polytechnic",
+  "pan": "GBZTW6440K",
+  "regno": "SOC/2005/951",
+  "validTill": "2027-10-27",
+  "area": "9056"
+ },
+ {
+  "file": "data/docs/noc_2.png",
+  "type": "noc",
+  "name": "Kaveri Technical Campus",
+  "pan": "SPXVG1027F",
+  "regno": "SOC/2013/374",
+  "validTill": "2029-03-19",
+  "area": "19083"
+ },
+ {
+  "file": "data/docs/noc_3.png",
+  "type": "noc",
+  "name": "Himalaya College of Engineering",
+  "pan": "VWPGW9975L",
+  "regno": "SOC/2020/455",
+  "validTill": "2030-02-18",
+  "area": "13071"
+ },
+ {
+  "file": "data/docs/noc_4.png",
+  "type": "noc",
+  "name": "Nalanda College of Engineering",
+  "pan": "HBKTY1153G",
+  "regno": "SOC/2019/653",
+  "validTill": "2026-09-26",
+  "area": "9818"
+ },
+ {
+  "file": "data/docs/noc_5.png",
+  "type": "noc",
+  "name": "Kaveri Institute of Management",
+  "pan": "MFWHM4307D",
+  "regno": "SOC/2011/296",
+  "validTill": "2026-03-26",
+  "area": "15486"
+ },
+ {
+  "file": "data/docs/noc_6.png",
+  "type": "noc",
+  "name": "Saraswati Polytechnic",
+  "pan": "KMDBZ7128B",
+  "regno": "SOC/2016/747",
+  "validTill": "2029-02-05",
+  "area": "9173"
+ },
+ {
+  "file": "data/docs/noc_7.png",
+  "type": "noc",
+  "name": "Himalaya Institute of Management",
+  "pan": "PCEXP4499E",
+  "regno": "SOC/2013/536",
+  "validTill": "2026-08-25",
+  "area": "13717"
+ },
+ {
+  "file": "data/docs/noc_8.png",
+  "type": "noc",
+  "name": "Himalaya Institute of Technology",
+  "pan": "HZJAA7056M",
+  "regno": "SOC/2019/598",
+  "validTill": "2026-10-21",
+  "area": "10510"
+ },
+ {
+  "file": "data/docs/noc_9.png",
+  "type": "noc",
+  "name": "Bharat Polytechnic",
+  "pan": "HFCYM3992H",
+  "regno": "SOC/2010/479",
+  "validTill": "2027-12-08",
+  "area": "6820"
+ },
+ {
+  "file": "data/docs/noc_10.png",
+  "type": "noc",
+  "name": "Vidya Institute of Technology",
+  "pan": "XXWBV8920A",
+  "regno": "SOC/2008/248",
+  "validTill": "2028-01-07",
+  "area": "15090"
+ },
+ {
+  "file": "data/docs/noc_11.png",
+  "type": "noc",
+  "name": "Saraswati Technical Campus",
+  "pan": "UCHFC8885G",
+  "regno": "SOC/2010/551",
+  "validTill": "2027-03-22",
+  "area": "18617"
+ },
+ {
+  "file": "data/docs/noc_12.png",
+  "type": "noc",
+  "name": "Nalanda Institute of Technology",
+  "pan": "DWBRJ3289H",
+  "regno": "SOC/2008/494",
+  "validTill": "2026-11-03",
+  "area": "11411"
+ },
+ {
+  "file": "data/docs/noc_13.png",
+  "type": "noc",
+  "name": "Nalanda Technical Campus",
+  "pan": "CJHTE8395J",
+  "regno": "SOC/2009/549",
+  "validTill": "2027-05-14",
+  "area": "10746"
+ },
+ {
+  "file": "data/docs/noc_14.png",
+  "type": "noc",
+  "name": "Himalaya Institute of Management",
+  "pan": "WHDMH8904B",
+  "regno": "SOC/2009/625",
+  "validTill": "2026-11-26",
+  "area": "14949"
+ },
+ {
+  "file": "data/docs/noc_15.png",
+  "type": "noc",
+  "name": "Aryabhatta Polytechnic",
+  "pan": "CUZKG4910D",
+  "regno": "SOC/2008/499",
+  "validTill": "2028-07-06",
+  "area": "4941"
+ },
+ {
+  "file": "data/docs/noc_16.png",
+  "type": "noc",
+  "name": "Gyan Institute of Technology",
+  "pan": "LMMLV9627E",
+  "regno": "SOC/2010/468",
+  "validTill": "2029-01-14",
+  "area": "7576"
+ },
+ {
+  "file": "data/docs/noc_17.png",
+  "type": "noc",
+  "name": "Gyan College of Engineering",
+  "pan": "MFEPW9117E",
+  "regno": "SOC/2010/310",
+  "validTill": "2027-10-22",
+  "area": "15595"
+ },
+ {
+  "file": "data/docs/noc_18.png",
+  "type": "noc",
+  "name": "Saraswati Polytechnic",
+  "pan": "EBTKT1907J",
+  "regno": "SOC/2016/443",
+  "validTill": "2028-11-28",
+  "area": "19493"
+ },
+ {
+  "file": "data/docs/noc_19.png",
+  "type": "noc",
+  "name": "Kaveri Technical Campus",
+  "pan": "DSFNZ1600C",
+  "regno": "SOC/2016/688",
+  "validTill": "2030-01-12",
+  "area": "12516"
+ },
+ {
+  "file": "data/docs/noc_20.png",
+  "type": "noc",
+  "name": "Bharat Institute of Technology",
+  "pan": "JFWXU7248K",
+  "regno": "SOC/2006/398",
+  "validTill": "2026-12-16",
+  "area": "11314"
+ },
+ {
+  "file": "data/docs/noc_21.png",
+  "type": "noc",
+  "name": "Tagore College of Engineering",
+  "pan": "AZFEC5103J",
+  "regno": "SOC/2005/119",
+  "validTill": "2026-12-24",
+  "area": "7196"
+ },
+ {
+  "file": "data/docs/noc_22.png",
+  "type": "noc",
+  "name": "Lakshmi Institute of Management",
+  "pan": "LFLJC3932A",
+  "regno": "SOC/2013/226",
+  "validTill": "2029-08-19",
+  "area": "12204"
+ },
+ {
+  "file": "data/docs/noc_23.png",
+  "type": "noc",
+  "name": "Bharat Institute of Technology",
+  "pan": "KDPWD8570M",
+  "regno": "SOC/2017/268",
+  "validTill": "2026-11-13",
+  "area": "15368"
+ },
+ {
+  "file": "data/docs/noc_24.png",
+  "type": "noc",
+  "name": "Tagore Institute of Technology",
+  "pan": "KYUHF6489M",
+  "regno": "SOC/2018/963",
+  "validTill": "2030-06-27",
+  "area": "10563"
+ },
+ {
+  "file": "data/docs/noc_25.png",
+  "type": "noc",
+  "name": "Vidya Institute of Management",
+  "pan": "DSJXS1189F",
+  "regno": "SOC/2008/643",
+  "validTill": "2027-02-11",
+  "area": "11094"
+ },
+ {
+  "file": "data/docs/noc_26.png",
+  "type": "noc",
+  "name": "Sunrise College of Engineering",
+  "pan": "DZUYR1659A",
+  "regno": "SOC/2013/794",
+  "validTill": "2030-05-21",
+  "area": "12884"
+ },
+ {
+  "file": "data/docs/noc_27.png",
+  "type": "noc",
+  "name": "Saraswati Institute of Technology",
+  "pan": "FMKYG6003F",
+  "regno": "SOC/2010/223",
+  "validTill": "2026-10-17",
+  "area": "18768"
+ },
+ {
+  "file": "data/docs/noc_28.png",
+  "type": "noc",
+  "name": "Saraswati Institute of Management",
+  "pan": "YLMXY5723E",
+  "regno": "SOC/2012/853",
+  "validTill": "2026-12-18",
+  "area": "8704"
+ },
+ {
+  "file": "data/docs/noc_29.png",
+  "type": "noc",
+  "name": "Ganga Institute of Management",
+  "pan": "FJNJX5975K",
+  "regno": "SOC/2020/580",
+  "validTill": "2028-01-08",
+  "area": "9466"
+ },
+ {
+  "file": "data/docs/noc_30.png",
+  "type": "noc",
+  "name": "Tagore Technical Campus",
+  "pan": "ZKYDY6307J",
+  "regno": "SOC/2015/603",
+  "validTill": "2028-05-07",
+  "area": "8841"
+ },
+ {
+  "file": "data/docs/noc_31.png",
+  "type": "noc",
+  "name": "Gyan Institute of Management",
+  "pan": "BXLBJ8207F",
+  "regno": "SOC/2008/633",
+  "validTill": "2027-11-24",
+  "area": "19301"
+ },
+ {
+  "file": "data/docs/noc_32.png",
+  "type": "noc",
+  "name": "Lakshmi Polytechnic",
+  "pan": "DERGW2557M",
+  "regno": "SOC/2020/375",
+  "validTill": "2031-12-21",
+  "area": "18986"
+ },
+ {
+  "file": "data/docs/noc_33.png",
+  "type": "noc",
+  "name": "Bharat Institute of Technology",
+  "pan": "KNCKZ3451G",
+  "regno": "SOC/2013/993",
+  "validTill": "2030-10-04",
+  "area": "10218"
+ },
+ {
+  "file": "data/docs/noc_34.png",
+  "type": "noc",
+  "name": "Aryabhatta Polytechnic",
+  "pan": "TGJNJ6275A",
+  "regno": "SOC/2020/489",
+  "validTill": "2029-05-06",
+  "area": "12796"
+ },
+ {
+  "file": "data/docs/noc_35.png",
+  "type": "noc",
+  "name": "Kaveri Institute of Management",
+  "pan": "JFVHZ4975F",
+  "regno": "SOC/2011/536",
+  "validTill": "2026-01-02",
+  "area": "8203"
+ },
+ {
+  "file": "data/docs/noc_36.png",
+  "type": "noc",
+  "name": "Himalaya Institute of Management",
+  "pan": "UNZMM8046G",
+  "regno": "SOC/2019/466",
+  "validTill": "2026-10-22",
+  "area": "9752"
+ },
+ {
+  "file": "data/docs/noc_37.png",
+  "type": "noc",
+  "name": "Lakshmi Institute of Technology",
+  "pan": "NCJKN3526D",
+  "regno": "SOC/2018/598",
+  "validTill": "2029-08-25",
+  "area": "14233"
+ },
+ {
+  "file": "data/docs/noc_38.png",
+  "type": "noc",
+  "name": "Vidya Institute of Management",
+  "pan": "UCJJB6089J",
+  "regno": "SOC/2010/213",
+  "validTill": "2031-05-23",
+  "area": "9625"
+ },
+ {
+  "file": "data/docs/noc_39.png",
+  "type": "noc",
+  "name": "Kaveri College of Engineering",
+  "pan": "NVEXK1985L",
+  "regno": "SOC/2008/461",
+  "validTill": "2030-11-21",
+  "area": "15843"
+ },
+ {
+  "file": "data/docs/fire_0.png",
+  "type": "fire",
+  "name": "Sunrise Institute of Technology",
+  "pan": "HSAHW1252L",
+  "regno": "SOC/2005/301",
+  "validTill": "2027-08-25",
+  "area": "13064"
+ },
+ {
+  "file": "data/docs/fire_1.png",
+  "type": "fire",
+  "name": "Tagore Institute of Management",
+  "pan": "ZPKCD9347B",
+  "regno": "SOC/2005/202",
+  "validTill": "2026-03-17",
+  "area": "12035"
+ },
+ {
+  "file": "data/docs/fire_2.png",
+  "type": "fire",
+  "name": "Kaveri Institute of Technology",
+  "pan": "RSPDF5512C",
+  "regno": "SOC/2006/373",
+  "validTill": "2031-02-28",
+  "area": "18808"
+ },
+ {
+  "file": "data/docs/fire_3.png",
+  "type": "fire",
+  "name": "Vidya College of Engineering",
+  "pan": "LJBXP1719H",
+  "regno": "SOC/2006/735",
+  "validTill": "2027-04-08",
+  "area": "4720"
+ },
+ {
+  "file": "data/docs/fire_4.png",
+  "type": "fire",
+  "name": "Gyan Polytechnic",
+  "pan": "AWLKF9119B",
+  "regno": "SOC/2012/793",
+  "validTill": "2029-11-23",
+  "area": "13581"
+ },
+ {
+  "file": "data/docs/fire_5.png",
+  "type": "fire",
+  "name": "Kaveri Technical Campus",
+  "pan": "AWCDJ1125E",
+  "regno": "SOC/2017/675",
+  "validTill": "2028-02-11",
+  "area": "12744"
+ },
+ {
+  "file": "data/docs/fire_6.png",
+  "type": "fire",
+  "name": "Kaveri Institute of Technology",
+  "pan": "ZKXNJ8651E",
+  "regno": "SOC/2016/342",
+  "validTill": "2029-01-09",
+  "area": "14883"
+ },
+ {
+  "file": "data/docs/fire_7.png",
+  "type": "fire",
+  "name": "Nalanda College of Engineering",
+  "pan": "CGWCL4935C",
+  "regno": "SOC/2016/461",
+  "validTill": "2027-12-13",
+  "area": "10175"
+ },
+ {
+  "file": "data/docs/fire_8.png",
+  "type": "fire",
+  "name": "Nalanda Polytechnic",
+  "pan": "YMFLD5272K",
+  "regno": "SOC/2019/701",
+  "validTill": "2028-09-08",
+  "area": "10621"
+ },
+ {
+  "file": "data/docs/fire_9.png",
+  "type": "fire",
+  "name": "Gyan Institute of Technology",
+  "pan": "SCWTU1470L",
+  "regno": "SOC/2009/418",
+  "validTill": "2026-07-23",
+  "area": "5409"
+ },
+ {
+  "file": "data/docs/fire_10.png",
+  "type": "fire",
+  "name": "Vidya College of Engineering",
+  "pan": "SCNJM5865D",
+  "regno": "SOC/2007/835",
+  "validTill": "2028-02-08",
+  "area": "8727"
+ },
+ {
+  "file": "data/docs/fire_11.png",
+  "type": "fire",
+  "name": "Kaveri Polytechnic",
+  "pan": "JWLRR3165E",
+  "regno": "SOC/2010/130",
+  "validTill": "2028-11-26",
+  "area": "14872"
+ },
+ {
+  "file": "data/docs/fire_12.png",
+  "type": "fire",
+  "name": "Sunrise Technical Campus",
+  "pan": "FWJRE2887E",
+  "regno": "SOC/2012/829",
+  "validTill": "2031-01-13",
+  "area": "4655"
+ },
+ {
+  "file": "data/docs/fire_13.png",
+  "type": "fire",
+  "name": "Nalanda Polytechnic",
+  "pan": "DTNRY4729K",
+  "regno": "SOC/2020/833",
+  "validTill": "2030-05-14",
+  "area": "14979"
+ },
+ {
+  "file": "data/docs/fire_14.png",
+  "type": "fire",
+  "name": "Sunrise Institute of Technology",
+  "pan": "WUGAW1775D",
+  "regno": "SOC/2008/138",
+  "validTill": "2028-04-25",
+  "area": "18982"
+ },
+ {
+  "file": "data/docs/fire_15.png",
+  "type": "fire",
+  "name": "Kaveri Technical Campus",
+  "pan": "ZRFNJ7946H",
+  "regno": "SOC/2015/808",
+  "validTill": "2030-12-23",
+  "area": "17598"
+ },
+ {
+  "file": "data/docs/fire_16.png",
+  "type": "fire",
+  "name": "Aryabhatta Institute of Management",
+  "pan": "BTKMY3091H",
+  "regno": "SOC/2011/144",
+  "validTill": "2031-09-09",
+  "area": "6859"
+ },
+ {
+  "file": "data/docs/fire_17.png",
+  "type": "fire",
+  "name": "Nalanda Institute of Management",
+  "pan": "FZDHC6088C",
+  "regno": "SOC/2009/802",
+  "validTill": "2031-08-22",
+  "area": "11909"
+ },
+ {
+  "file": "data/docs/fire_18.png",
+  "type": "fire",
+  "name": "Sunrise Institute of Management",
+  "pan": "SDRTD3324K",
+  "regno": "SOC/2012/441",
+  "validTill": "2031-02-18",
+  "area": "10957"
+ },
+ {
+  "file": "data/docs/fire_19.png",
+  "type": "fire",
+  "name": "Lakshmi College of Engineering",
+  "pan": "PLUWC5740A",
+  "regno": "SOC/2016/598",
+  "validTill": "2027-01-02",
+  "area": "18676"
+ },
+ {
+  "file": "data/docs/fire_20.png",
+  "type": "fire",
+  "name": "Bharat Polytechnic",
+  "pan": "LCHLJ3754J",
+  "regno": "SOC/2007/146",
+  "validTill": "2026-08-25",
+  "area": "11954"
+ },
+ {
+  "file": "data/docs/fire_21.png",
+  "type": "fire",
+  "name": "Vidya Institute of Management",
+  "pan": "GRZMV6272A",
+  "regno": "SOC/2016/193",
+  "validTill": "2031-05-21",
+  "area": "14049"
+ },
+ {
+  "file": "data/docs/fire_22.png",
+  "type": "fire",
+  "name": "Ganga Polytechnic",
+  "pan": "SBUAK3377E",
+  "regno": "SOC/2016/290",
+  "validTill": "2031-09-28",
+  "area": "18673"
+ },
+ {
+  "file": "data/docs/fire_23.png",
+  "type": "fire",
+  "name": "Bharat Polytechnic",
+  "pan": "UHEVH7037C",
+  "regno": "SOC/2016/957",
+  "validTill": "2028-04-02",
+  "area": "4675"
+ },
+ {
+  "file": "data/docs/fire_24.png",
+  "type": "fire",
+  "name": "Ganga Technical Campus",
+  "pan": "XYMMD5908K",
+  "regno": "SOC/2007/245",
+  "validTill": "2031-04-06",
+  "area": "6265"
+ },
+ {
+  "file": "data/docs/fire_25.png",
+  "type": "fire",
+  "name": "Bharat Institute of Technology",
+  "pan": "WMFJA9376G",
+  "regno": "SOC/2009/390",
+  "validTill": "2026-11-02",
+  "area": "12431"
+ },
+ {
+  "file": "data/docs/fire_26.png",
+  "type": "fire",
+  "name": "Bharat Technical Campus",
+  "pan": "AYETJ1068H",
+  "regno": "SOC/2016/681",
+  "validTill": "2027-08-03",
+  "area": "12891"
+ },
+ {
+  "file": "data/docs/fire_27.png",
+  "type": "fire",
+  "name": "Kaveri Institute of Management",
+  "pan": "XWZZR1983M",
+  "regno": "SOC/2015/723",
+  "validTill": "2031-05-19",
+  "area": "13357"
+ },
+ {
+  "file": "data/docs/fire_28.png",
+  "type": "fire",
+  "name": "Aryabhatta College of Engineering",
+  "pan": "GHXAE8329M",
+  "regno": "SOC/2007/250",
+  "validTill": "2031-10-12",
+  "area": "13091"
+ },
+ {
+  "file": "data/docs/fire_29.png",
+  "type": "fire",
+  "name": "Vidya Institute of Management",
+  "pan": "FLGFZ4323J",
+  "regno": "SOC/2008/326",
+  "validTill": "2028-11-04",
+  "area": "7072"
+ },
+ {
+  "file": "data/docs/fire_30.png",
+  "type": "fire",
+  "name": "Ganga Technical Campus",
+  "pan": "FLNTT2314G",
+  "regno": "SOC/2007/919",
+  "validTill": "2029-03-28",
+  "area": "12243"
+ },
+ {
+  "file": "data/docs/fire_31.png",
+  "type": "fire",
+  "name": "Bharat Institute of Management",
+  "pan": "CWKDZ8784B",
+  "regno": "SOC/2009/482",
+  "validTill": "2030-01-13",
+  "area": "7881"
+ },
+ {
+  "file": "data/docs/fire_32.png",
+  "type": "fire",
+  "name": "Sunrise Institute of Management",
+  "pan": "YLCDX2436K",
+  "regno": "SOC/2011/676",
+  "validTill": "2026-12-28",
+  "area": "9810"
+ },
+ {
+  "file": "data/docs/fire_33.png",
+  "type": "fire",
+  "name": "Vidya Institute of Technology",
+  "pan": "VCJTY9011A",
+  "regno": "SOC/2016/202",
+  "validTill": "2028-09-11",
+  "area": "17156"
+ },
+ {
+  "file": "data/docs/fire_34.png",
+  "type": "fire",
+  "name": "Lakshmi College of Engineering",
+  "pan": "FELWP2860A",
+  "regno": "SOC/2020/213",
+  "validTill": "2026-05-06",
+  "area": "6461"
+ },
+ {
+  "file": "data/docs/fire_35.png",
+  "type": "fire",
+  "name": "Lakshmi Technical Campus",
+  "pan": "WPFZU5402H",
+  "regno": "SOC/2005/125",
+  "validTill": "2028-03-16",
+  "area": "12221"
+ },
+ {
+  "file": "data/docs/fire_36.png",
+  "type": "fire",
+  "name": "Sunrise Institute of Technology",
+  "pan": "EVSKL3593M",
+  "regno": "SOC/2019/502",
+  "validTill": "2027-10-17",
+  "area": "5243"
+ },
+ {
+  "file": "data/docs/fire_37.png",
+  "type": "fire",
+  "name": "Nalanda Polytechnic",
+  "pan": "XPBDJ8663F",
+  "regno": "SOC/2019/497",
+  "validTill": "2028-06-01",
+  "area": "9496"
+ },
+ {
+  "file": "data/docs/fire_38.png",
+  "type": "fire",
+  "name": "Nalanda Institute of Technology",
+  "pan": "FXPRT3353E",
+  "regno": "SOC/2017/379",
+  "validTill": "2026-09-09",
+  "area": "9846"
+ },
+ {
+  "file": "data/docs/fire_39.png",
+  "type": "fire",
+  "name": "Saraswati College of Engineering",
+  "pan": "ZANUX7983L",
+  "regno": "SOC/2008/471",
+  "validTill": "2028-04-28",
+  "area": "17053"
+ }
+]
